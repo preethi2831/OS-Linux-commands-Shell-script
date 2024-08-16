@@ -108,21 +108,18 @@ cat > file22
 1003 | Joe |  7000 | Developer
 ^d
 ```
-
-
 cut -c1-3 file11
 ## OUTPUT
 
-
-
-
-cut -d "|" -f 1 file22
-## OUTPUT
 ```
 Hel
 Thi
-
-
+cut -d "|" -f 1 file22
+## OUTPUT
+```
+1001
+1002
+1003
 cut -d "|" -f 2 file22
 ## OUTPUT
 ```
@@ -163,7 +160,6 @@ cat newfile | grep -i "hello"
 Hello world
 hello world
 
-
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 ```
@@ -173,7 +169,6 @@ grep -R ubuntu /etc
 ## OUTPUT
 ```
 recursion
-
 
 grep -w -n world newfile   
 ## OUTPUT
@@ -204,7 +199,6 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 ```
-Hello world
 hello world
 
 egrep -w '(H|h)ello' newfile 
