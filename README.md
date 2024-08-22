@@ -1,3 +1,8 @@
+NAME : Preethika N  
+REG NO : 212223040130
+
+
+
 # OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
@@ -1284,7 +1289,10 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+```
+Enter your name: Karthikeyan
+Hello Karthikeyan, welcome to my program.
+```
 
  cat exread1.sh
 ```bash
@@ -1296,7 +1304,10 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+```
+Enter your name: Karthikeyan
+Hello Karthikeyan, welcome to my program.
+```
 
 
 $ ./exread1.sh 
@@ -1318,10 +1329,13 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
- 
+```
+ Usage: badtest1 a b
+```
  ./funcex.sh 1 2
-
+```
+The result is 2
+```
  
 cat argshift.sh
 ```bash
@@ -1335,7 +1349,11 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+```
+1
+2
+3
+``` 
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1352,6 +1370,12 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+
+```
+1
+2
+3
+```
  
 cat argshift.sh
 ```bash
@@ -1365,7 +1389,21 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ```
++ ((  3  ))
++ echo 1 
+1
++ shift
++ ((  2  ))
++ echo 2
+2
++ shift
++ ((  1  ))
++ echo 3
++ shift
++ ((  0  ))
++ set +x
+```
  
 cat > nc.awk
 ```bash
@@ -1396,7 +1434,21 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+```
+ 7         bcdfghj
+8	  abcdfghj
+7	  bcdfghj
+8  	  ebcdfghj
+7	  bcdfghhj
+8	  ibcdfghj
+7	  bcdfghj
+8	  obcdfghj
+7	  bcdfghj
+8 	  ubcdfghj
+total characters 75
+Number of Lines are 10
+No of Words count: 10
+```
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1423,7 +1475,19 @@ else
 fi
 ```
 ## OUTPUT 
+```
+locathost:~# chmod 755 palindrome.sh
+locathost:~# ./palindrome.sh
+Enter the number
+21
+Number is NOT palindrome
 
-
+locathost:~# chmod 755 palindrome.sh
+locathost:~# ./palindrome.sh
+Enter the number
+33
+Number is palindrome
+locathost:~#
+```
 # RESULT:
 The Commands are executed successfully.
